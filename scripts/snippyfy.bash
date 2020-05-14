@@ -20,7 +20,7 @@ printf '%s\n' "${R2}" > R2.list
 # Merge files into tab-separated file
 
 paste samplename.list R1.list R2.list > test.list
-sed -i '1i #ID	R1	R2' test.list
+sed -i '1i #ID	R1	R2' ${output_path}/snippy_samples.list
 
 # Cleanup
 rm samplename.list
